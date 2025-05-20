@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
 
 namespace TesteInga;
@@ -82,7 +83,7 @@ class Program
     static int IsValidInt(string inputUser)
     {
         bool sucess = int.TryParse(inputUser, out int maxParticpants);
-        while (!sucess)
+        while (!sucess || maxParticpants <= 0)
         {
             Console.WriteLine("Entrada inválida!!!! Por favor digite um valor válido");
             Console.Write("Digite a quantidade máxima de participantes: ");
