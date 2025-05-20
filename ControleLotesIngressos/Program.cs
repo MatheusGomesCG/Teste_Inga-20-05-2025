@@ -4,7 +4,7 @@ namespace TesteInga;
 
 class Program
 {
-    static async Task Main(string[] args)
+    static void Main(string[] args)
     {
         decimal ticketNormal = 30.00M;
         decimal ticketVip = 60.00M;
